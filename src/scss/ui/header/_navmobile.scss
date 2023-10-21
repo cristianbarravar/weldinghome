@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.navegacionMobile {
+    display: flex;
+    justify-content: space-between;
+        
+
+
+        @include m.tablet { 
+            display: none;
+        }
+
+        &__link {
+            color: v.$blanco;
+            font-size: 1.6rem;
+            margin: 0 auto;
+            padding: 1rem 1rem;
+            background-color: v.$negro;
+            &:last-of-type {
+                margin-bottom: 0;
+                display: flex;
+            }
+            @include m.tablet { 
+                margin-bottom: 0;
+            }
+            &:last-of-type::before {
+                content: '';
+                display: block;
+                width: 2.8rem;
+                height: 2.8rem;
+                background-image: url(../img/telefono.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin-right: 1rem;
+            }
+        }
+    }

@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.volver-btn {
+    position: fixed;
+    top: 5rem;
+    right: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    background-color: transparentize($color: v.$blanco, $amount: .75);
+    border-radius: 50%;
+    @include m.tablet { 
+        top: unset;
+        bottom: 6rem;
+        right: 4rem;
+        border: none;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}

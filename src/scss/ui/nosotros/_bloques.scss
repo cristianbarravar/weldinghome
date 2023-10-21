@@ -1,0 +1,137 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloques {
+    
+    &__heading {
+        @include m.heading;
+        text-align: center;
+        background-color: darken($color: v.$blanco, $amount: 5%);
+        padding: 1rem;
+        margin: 0;
+        &::after {
+            margin: 1rem auto;
+        }
+        
+    }
+
+    &__grid {
+        @include m.tablet { 
+            @include m.grid(2, 0rem);
+            grid-auto-flow: dense;
+        }
+    }
+}
+
+.bloque {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include m.tablet { 
+        height: 35rem;
+    }
+    @include m.desktopXXL { 
+        height: 40rem;
+    }
+    
+    &:nth-child(1) {
+        background-color: v.$primario;
+    }
+
+    &:nth-child(2) {
+        @include m.bgImage('../img/habitacional/whhabitacional_hor.avif');
+    }
+
+    &:nth-child(3) {
+        background-color: v.$secundario;
+        margin-top: 2rem;
+        @include m.tablet { 
+            grid-column: 2 / 3;
+            margin-top: 0;
+        }
+    }
+
+
+    &:nth-child(4) {
+        @include m.bgImage('../img/oficinas/whoficina_hor.jpeg')
+    }
+
+    &__contenido {
+        max-width: 50rem;
+
+        // border-block: 1px solid v.$blanco;
+        color: v.$blanco;
+        padding: 1rem 0;
+        @include m.tablet { 
+            border-block: 1px solid v.$blanco;
+        }
+    }
+    &__heading {
+        // text-transform: uppercase;
+        font-size: 2.6rem;
+        @include m.tablet { 
+            font-size: 3.2rem;
+        }
+        span {
+            font-size: 2rem;
+            display: block;
+            color: darken($color: v.$primario, $amount: 5%);
+        }
+    }
+    &__texto {
+        font-size: 1.4rem;
+        padding: 0 2rem;
+
+        color: v.$blanco;
+        @include m.tablet { 
+            font-size: 1.6rem;
+            padding: 0;
+        }
+    }
+
+
+
+    &__contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        @include m.tablet { 
+            margin-top: 2rem;
+        }
+    }
+    &__comunicacion {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: v.$blanco;
+        @include m.desktop { 
+            font-size: 1.4rem;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+    &__logos {
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: row;
+        img {
+            padding-top: .5rem;
+            width: 80% ;
+        }
+    }
+}
+
+.bloque-main {
+        height: 25rem;
+        @include m.tablet { 
+            height: 35rem;
+        }
+        @include m.desktopXXL { 
+            height: 45rem;
+        }
+}
+
+

@@ -1,0 +1,53 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.enfoque {
+    
+    @include m.tablet { 
+    margin-top: 5rem;   
+    }
+    &__grid {
+        @include m.tablet { 
+            @include m.grid(2, 2rem);
+        }
+    }
+    &__img {
+        border-radius: 50%;
+        width: 37rem;
+        height: 37rem;
+        overflow: hidden;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        @include m.desktop { 
+            margin-left: 5rem;
+        }
+        @include m.desktopXL { 
+            width: 45rem;
+            height: 45rem;
+        }
+        @include m.desktopXXL { 
+            width: 50rem;
+            height: 50rem;
+        }
+    }
+    &__contenido {
+        @include m.tablet { 
+            padding-right: 7.5rem;
+        }
+    }
+    &__heading {
+        @include m.heading;
+    }
+    &__texto {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        span {
+            font-weight: 700;
+        }
+        @include m.tablet { 
+            margin-top: 4rem;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
