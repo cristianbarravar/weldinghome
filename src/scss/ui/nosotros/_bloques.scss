@@ -38,7 +38,7 @@
     }
     
     &:nth-child(1) {
-        background-color: v.$primario;
+        background-color: darken($color: v.$primario, $amount: 10);
     }
 
     &:nth-child(2) {
@@ -114,13 +114,14 @@
         }
     }
     &__logos {
-        padding-left: 1rem;
+        // padding-left: 1rem;
         display: flex;
-        flex-direction: row;
-        img {
-            padding-top: .5rem;
-            width: 80% ;
+        a {
+            margin-left: 2rem;
+            width: max-content;
+            max-height: 3.5rem;
         }
+        
     }
 }
 

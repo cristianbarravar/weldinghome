@@ -868,8 +868,12 @@ p {
 }
 
 .footer {
-  background-color: rgba(27, 49, 74, 0.8);
+  background-image: linear-gradient(to right, rgba(27, 49, 74, 0.7) 0%, rgba(27, 49, 74, 0.7) 100%), url(../img/whheader2.jpg);
   padding: 2rem 0;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0;
+  position: relative;
 }
 @media (min-width: 768px) {
   .footer {
@@ -927,9 +931,9 @@ p {
   background-color: #FFF;
 }
 .footer__copyright {
-  background-color: rgba(7, 12, 18, 0.8);
+  background-color: #000;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 0;
   color: #FFF;
 }
@@ -1074,7 +1078,7 @@ p {
   }
 }
 .bloque:nth-child(1) {
-  background-color: rgba(27, 49, 74, 0.8);
+  background-color: rgba(13, 24, 37, 0.8);
 }
 .bloque:nth-child(2) {
   background-image: url("../img/habitacional/whhabitacional_hor.avif");
@@ -1156,13 +1160,13 @@ p {
   font-weight: 700;
 }
 .bloque__logos {
-  padding-left: 1rem;
   display: flex;
-  flex-direction: row;
 }
-.bloque__logos img {
-  padding-top: 0.5rem;
-  width: 80%;
+.bloque__logos a {
+  margin-left: 2rem;
+  width: -webkit-max-content;
+  width: max-content;
+  max-height: 3.5rem;
 }
 
 .bloque-main {

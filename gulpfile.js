@@ -19,7 +19,6 @@ function css( done ) {
         .pipe( postcss([ autoprefixer() ]) )
         .pipe( sourcemaps.write('.'))
         .pipe( dest('build/css') )
-
     done();
 }
 
