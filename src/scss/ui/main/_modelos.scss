@@ -1,93 +1,64 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.bloques { 
-    @include m.tablet { 
-        margin-top: 7.5rem;
-    }
-
-    .bloque__contenido {
-        padding: 2rem 0;
-        @include m.desktop { 
-            padding: 0;
+.modelos {
+    margin: 5rem auto;
+    &__grid {
+        @include m.grid(2, 1rem);
+        justify-items: center;
+        align-items: center;
+        @include m.tablet { 
+            @include m.grid(3, 2rem); 
+            width: 85%;
+            margin: 0 auto;
         }
-    
-    }    
+    }
 }
 
-.bloques-1 {
-    margin-top: 5rem;
-
-    .bloque-bodega {
-    
-        &:nth-child(1) {
-            background-color: darken($color: v.$primario, $amount: 10);
-            grid-column: 2 / 3;
+.modelo {
+    &__presentacion {
+        background-color: darken($color: v.$primario, $amount: 5);
+        text-align: center;
+        padding: 2rem;
+        @include m.tablet { 
+            background-color: lighten($color: v.$primario, $amount: 5);
         }
+        
+
         &:nth-child(2) {
-            background-image: url(../img/bodegaBasic/whbodegabasic_hor.jpg);
+            
+            @include m.tablet { 
+                grid-column: 3 / 4;
+            }
         }
-        &:nth-child(3) {
-            background-color: darken($color: v.$secundario, $amount: 5);
-            grid-column: 1 / 2;
+
+        &:last-child {
+            grid-column: 1 / 3;
+            background-color: lighten($color: v.$primario, $amount: 10);
+            @include m.tablet { 
+                grid-row: 1 / 2;
+                grid-column: 2  / 3;
+                background-color: darken($color: v.$primario, $amount: 5);
+            }
+
+            
         }
-        &:nth-child(4) {
-            background-image: url(../img/bodegaRefor/whbodegarefor_hor.jpg);
+    }
+
+    &__heading {
+        color: v.$blanco;
+        font-size: 2rem;
+        @include m.tablet { 
+            font-size: 2.8rem;
+        }
+    }
+
+    &__texto {
+        color: v.$blanco;
+        font-size: 1.4rem;
+        font-weight: 700;
+        @include m.tablet { 
+            font-size: 1.6rem;
         }
     }
 }
-
-.bloques-2 {
-    margin-top: 5rem;
-
-    .bloque-oficina {
-
-        &:nth-child(1) {
-            background-color: darken($color: v.$primario, $amount: 10);
-            grid-column: 2 / 3;
-        }
-        &:nth-child(2) {
-            background-image: url(../img/oficinas/whoficina2_hor.jpeg);
-        }
-    }
-}
-
-.bloques-3 {
-    margin-top: 5rem;
-
-    .bloque-habitacional {
-    
-        &:nth-child(1) {
-            background-color: darken($color: v.$primario, $amount: 10);
-            grid-column: 1 / 2;
-        }
-        &:nth-child(2) {
-            background-image: url(../img/habitacional/whhabitacional_ver.jpg);
-        }
-    }
-}
-
-
-.bloques-4 {
-    margin-top: 5rem;
-
-    .bloque-camarin {
-    
-        &:nth-child(1) {
-            background-color: darken($color: v.$primario, $amount: 10);
-            grid-column: 2 / 3;
-        }
-        &:nth-child(2) {
-            background-image: url(../img/camarines/whcamarin_ver.jpg);
-        }
-    }
-}
-
-// .slide {
-//     width: 100%;
-//     height: 100%;
-//     background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
-//     background-repeat: no-repeat;
-//     background-position: center;
-// }
-
