@@ -42,7 +42,13 @@
     }
 
     &:nth-child(2) {
-        @include m.bgImage('../img/habitacional/whhabitacional_hor.avif');
+        @include m.bgImage('../img/nosotros2.jpeg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        @include m.tablet { 
+            background-position: calc(30%);
+        }
     }
 
     &:nth-child(3) {
@@ -81,6 +87,16 @@
             color: darken($color: v.$primario, $amount: 5%);
         }
     }
+    &__flex {
+        display: flex;
+    }
+    &__lista {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        margin: 2rem 2rem;
+    }
     &__texto {
         font-size: 1.2rem;
         padding: 0 1rem;
@@ -92,8 +108,9 @@
         }
     }
 
-
-
+    ul {
+        margin: .4rem;
+    }
     &__contact {
         display: flex;
         flex-direction: row;

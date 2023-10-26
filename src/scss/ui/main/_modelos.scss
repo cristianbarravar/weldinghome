@@ -3,16 +3,7 @@
 
 .modelos {
     margin: 5rem auto;
-    &__grid {
-        @include m.grid(2, 1rem);
-        justify-items: center;
-        align-items: center;
-        @include m.tablet { 
-            @include m.grid(3, 2rem); 
-            width: 85%;
-            margin: 0 auto;
-        }
-    }
+    
 }
 
 .modelo {
@@ -23,31 +14,12 @@
         @include m.tablet { 
             background-color: lighten($color: v.$primario, $amount: 5);
         }
-        
-
-        &:nth-child(2) {
             
-            @include m.tablet { 
-                grid-column: 3 / 4;
-            }
-        }
-
-        &:last-child {
-            grid-column: 1 / 3;
-            background-color: lighten($color: v.$primario, $amount: 10);
-            @include m.tablet { 
-                grid-row: 1 / 2;
-                grid-column: 2  / 3;
-                background-color: darken($color: v.$primario, $amount: 5);
-            }
-
-            
-        }
     }
 
     &__heading {
         color: v.$blanco;
-        font-size: 2rem;
+        font-size: 1.8rem;
         @include m.tablet { 
             font-size: 2.8rem;
         }
