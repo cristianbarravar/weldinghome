@@ -82,8 +82,8 @@
         }
     }
     &__texto {
-        font-size: 1.4rem;
-        padding: 0 2rem;
+        font-size: 1.2rem;
+        padding: 0 1rem;
 
         color: v.$blanco;
         @include m.tablet { 
@@ -98,14 +98,17 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        margin-bottom: 2rem;
         @include m.tablet { 
             margin-top: 2rem;
+            margin-bottom: 0;
         }
     }
     &__comunicacion {
         font-size: 1.2rem;
         text-transform: uppercase;
         color: v.$blanco;
+        // padding-bottom: 2rem ;
         @include m.desktop { 
             font-size: 1.4rem;
         }
@@ -120,8 +123,18 @@
             margin-left: 2rem;
             width: max-content;
             max-height: 3.5rem;
+            transition-property: scale;
+            transition-duration: .2s;
+
+            &:hover {
+                scale: 1.2;
+            }
         }
-        
+        svg {
+            @include m.tablet { 
+                height: 3.5rem;
+            }
+        }
     }
 }
 

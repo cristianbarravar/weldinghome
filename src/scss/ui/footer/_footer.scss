@@ -30,8 +30,12 @@
     }
     &__texto {
         color: v.$blanco;
-        font-size: 1.3rem;
-        font-family: 'Recursive', sans-serif;
+        max-width: 85%;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        @include m.tablet { 
+            margin-bottom: 4rem;
+        }
     }
     &__navegacion {
         display: flex;
@@ -80,4 +84,8 @@
         }
     }
 
+
+    @include m.tablet { 
+            
+    }
 }

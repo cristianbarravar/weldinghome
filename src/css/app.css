@@ -381,6 +381,7 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
+  font-family: "Recursive", sans-serif;
 }
 @media (min-width: 768px) {
   h3 {
@@ -1118,8 +1119,14 @@ p {
 }
 .footer__texto {
   color: #FFF;
-  font-size: 1.3rem;
-  font-family: "Recursive", sans-serif;
+  max-width: 85%;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .footer__texto {
+    margin-bottom: 4rem;
+  }
 }
 .footer__navegacion {
   display: -webkit-box;
@@ -1179,7 +1186,6 @@ p {
     width: 100%;
   }
 }
-
 @media (min-width: 768px) {
   .enfoque {
     margin-top: 5rem;
@@ -1366,8 +1372,8 @@ p {
   color: rgba(20, 37, 55, 0.8);
 }
 .bloque__texto {
-  font-size: 1.4rem;
-  padding: 0 2rem;
+  font-size: 1.2rem;
+  padding: 0 1rem;
   color: #FFF;
 }
 @media (min-width: 768px) {
@@ -1386,10 +1392,12 @@ p {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .bloque__contact {
     margin-top: 2rem;
+    margin-bottom: 0;
   }
 }
 .bloque__comunicacion {
@@ -1416,6 +1424,18 @@ p {
   width: -moz-max-content;
   width: max-content;
   max-height: 3.5rem;
+  -webkit-transition-property: scale;
+  transition-property: scale;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.bloque__logos a:hover {
+  scale: 1.2;
+}
+@media (min-width: 768px) {
+  .bloque__logos svg {
+    height: 3.5rem;
+  }
 }
 
 .bloque-main {
