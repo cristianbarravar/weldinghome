@@ -17,8 +17,6 @@
     <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css">
 
-    <link rel="preload" href="../img/whheader.jpeg" as="image">
-
 </head>
 <body>
     
@@ -42,15 +40,15 @@
 
                 <picture>
                     <source
-                        srcset="build/img/fotos/wh2_hor.avif" 
+                        srcset="build/img/fotos/wh_hor.avif" 
                         type="image/avif">
                     <source
-                        srcset="build/img/fotos/wh2_hor.webp" 
+                        srcset="build/img/fotos/wh_hor.webp" 
                         type="image/webp">
                     <source
-                        srcset="build/img/fotos/wh2_hor.jpeg" 
+                        srcset="build/img/fotos/wh_hor.jpeg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/fotos/wh2_hor.jpeg" lazyalt="imagen" class="header__imagen">
+                    <img loading="lazy" decoding="async" src="build/img/fotos/wh_hor.jpeg" lazyalt="imagen" class="header__imagen">
                 </picture>
             </div>
             
@@ -144,18 +142,21 @@
 
     
 
+    <!-- Scss = ui / main / _modelos.scss  -->
     <main class="modelos">
-
 
             <div class="modelo__presentacion contenedor">
                 <h3 class="modelo__heading">A continuación te presentaremos los modelos más populares</h3>
             </div>
 
 
-        <div class="bloques bloques-1">
+
+        <!-- Scss = ui / main / _bloquesmain.scss  y diseño heredado de ui / nosotros / _bloques.scss -->
+        <div class="bloques-1">
             <h2 class="bloques__heading">Modulares para uso de <span>Bodegas</span></h2>
             <div class="bloques__grid bloques__grid-main">
-    
+                
+                <!-- Scss = ui / main / _bloquesmain.scss  , solo cambio de background image-->
                 <div class="bloque bloque-main bloque-bodega">
                     <div class="bloque__contenido">
                         <h3 class="bloque__heading">Bodegas básicas</h3>
@@ -170,10 +171,9 @@
                     </div>
                 </div>
 
-                
-                
                 <div class="bloque bloque-main bloque-bodega"></div>
     
+
     
                 <div class="bloque bloque-main bloque-bodega">
                     <div class="bloque__contenido">
@@ -192,7 +192,6 @@
                     </div>
                 </div>
 
-
                 <div class="bloque bloque-main bloque-bodega"></div>
             </div>
         </div>
@@ -200,7 +199,7 @@
 
 
 
-        <div class="bloques bloques-2">
+        <div class="bloques-2">
             <h2 class="bloques__heading">Modulares para uso de <span>Oficinas</span></h2>
             <div class="bloques__grid bloques__grid-main">
     
@@ -221,7 +220,7 @@
             </div>
         </div>
 
-        <div class="bloques bloques-3">
+        <div class="bloques-3">
             <h2 class="bloques__heading">Modulares para uso <span>Habitacional</span></h2>
             <div class="bloques__grid bloques__grid-main">
     
@@ -239,31 +238,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="bloque bloque-main bloque-habitacional"></div>
+                <div class="bloque bloque-main bloque-habitacional role="img" ">
+                    
+                </div>
             </div>
         </div>
 
-        <div class="bloques bloques-4">
+        <div class="bloques-4">
             <h2 class="bloques__heading">Otros <span>Proyectos</span></h2>
             <div class="bloques__grid bloques__grid-main">
-    
-                <div class="bloque bloque-main bloque-camarin">
+                
+                <div class="bloque bloque-main bloque-otros">
                     <div class="bloque__contenido">
                         <h3 class="bloque__heading">Proyectos a tu medida</h3>
-
                         <div class="bloque__flex">
                             <div class="bloque__lista">
-                                <ul class="bloque__texto">Camarines</ul>
-                                <ul class="bloque__texto">Baños</ul>
-                                <ul class="bloque__texto">Kioscos</ul>
-                                <ul class="bloque__texto">Caseta de vigilancia</ul>
+                                <li class="bloque__texto">Camarines</li>
+                                <li class="bloque__texto">Baños</li>
+                                <li class="bloque__texto">Kioscos</li>
+                                <li class="bloque__texto">Caseta de vigilancia</li>
                             </div>
     
                             <div class="bloque__lista">
-                                <ul class="bloque__texto">Cafeterías</ul>
-                                <ul class="bloque__texto">Salas de proceso</ul>
-                                <ul class="bloque__texto">Proyectos antiroedores</ul>
-                                <ul class="bloque__texto">Otros</ul>
+                                <li class="bloque__texto">Cafeterías</li>
+                                <li class="bloque__texto">Salas de proceso</li>
+                                <li class="bloque__texto">Proyectos antiroedores</li>
+                                <li class="bloque__texto">Otros</li>
                             </div>
                         </div>
 
@@ -276,34 +276,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="bloque bloque-main bloque-camarin"></div>
+                <div class="bloque bloque-main bloque-otros"></div>
             </div>
         </div>
     
     </main>
         
-    
-
-
-
-
-
-
-
-<!-- para galeria necesitamos el siguiente orden:
-1 - horizontal
-2 - horizontal
-3 - horizontal
-4 - vertical
-5 - horizontal 
-6 - horizontal
-7 - horizontal
-8 - horizontal
-9 - horizontal
-10 - horizontal -->
-
-
-
     
 
     <section class="galeria contenedor mt-5">
@@ -322,7 +300,7 @@
                     <source
                         srcset="build/img/bodegaBasic/whbodegabasic_hor.jpg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/bodegaBasic/whbodegabasic_hor.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="build/img/bodegaBasic/whbodegabasic_hor.jpg" lazyalt="imagen" alt="imagen galeria horizontal">
                 </picture>
             </div>
             <div class="galeria__img">
@@ -336,7 +314,7 @@
                     <source
                         srcset="build/img/bodegaBasic/whbodegabasic_hor.jpg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/bodegaBasic/whbodegabasic2_hor.jpg lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="build/img/bodegaBasic/whbodegabasic2_hor.jpg lazyalt="imagen" alt="imagen galeria horizontal">
                 </picture>
             </div>
             <div class="galeria__img">
@@ -350,7 +328,7 @@
                     <source
                         srcset="build/img/bodegaBasic/whbodegabasic_ver.jpg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/bodegaBasic/whbodegabasic_hor.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="build/img/bodegaBasic/whbodegabasic_hor.jpg" lazyalt="imagen" alt="imagen galeria vertical">
                 </picture>
             </div>
             <div class="galeria__img">
@@ -364,7 +342,7 @@
                     <source
                         srcset="build/img/bodegaRefor/whbodegarefor_ver.jpg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/bodegaRefor/whbodegarefor_ver.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="build/img/bodegaRefor/whbodegarefor_ver.jpg" lazyalt="imagen" alt="imagen galeria vertical">
                 </picture>
             </div>
             <div class="galeria__img">
@@ -378,7 +356,7 @@
                     <source
                         srcset="build/img/bodegaRefor/whbodegarefor_hor.jpg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/bodegaRefor/whbodegarefor_hor.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="build/img/bodegaRefor/whbodegarefor_hor.jpg" lazyalt="imagen" alt="imagen galeria horizontal">
                 </picture>
             </div>
             <div class="galeria__img">
@@ -392,7 +370,7 @@
                     <source
                         srcset="build/img/bodegaRefor/whbodegarefor2_hor.jpg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/bodegaRefor/whbodegarefor2_hor.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="build/img/bodegaRefor/whbodegarefor2_hor.jpg" lazyalt="imagen" alt="imagen galeria horizontal">
                 </picture>
             </div> 
             <div class="galeria__img">
@@ -406,7 +384,7 @@
                     <source
                         srcset="build/img/habitacional/whhabitacional_hor.jpg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/habitacional/whhabitacional_hor.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="build/img/habitacional/whhabitacional_hor.jpg" lazyalt="imagen" alt="imagen galeria horizontal">
                 </picture>
             </div>
             <div class="galeria__img">
@@ -420,7 +398,7 @@
                     <source
                         srcset="build/img/oficinas/whoficina_hor.jpg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/oficinas/whoficina_hor.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="build/img/oficinas/whoficina_hor.jpg" lazyalt="imagen" alt="imagen galeria horizontal">
                 </picture>
             </div>
             <div class="galeria__img">
@@ -434,7 +412,7 @@
                     <source
                         srcset="build/img/oficinas/whoficina2_hor.jpg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/oficinas/whoficina2_hor.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="build/img/oficinas/whoficina2_hor.jpg" lazyalt="imagen" alt="imagen galeria horizontal">
                 </picture>
             </div>
             <div class="galeria__img">
@@ -448,7 +426,7 @@
                     <source
                         srcset="build/img/oficinas/whoficina3_hor.jpg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/oficinas/whoficina3_hor.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="build/img/oficinas/whoficina3_hor.jpg" lazyalt="imagen" alt="imagen galeria horizontal">
                 </picture>
             </div>
 

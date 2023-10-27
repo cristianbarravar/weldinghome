@@ -15,6 +15,19 @@
     }    
 }
 
+.bloque-main {
+        height: 25rem;
+        @include m.tablet { 
+            height: 35rem;
+        }
+        @include m.desktopXXL { 
+            height: 40rem;
+        }
+}
+
+
+
+
 .bloques-1 {
     margin-top: 5rem;
 
@@ -25,18 +38,22 @@
             grid-column: 2 / 3;
         }
         &:nth-child(2) {
-            background-image: url(../img/bodegaBasic/whbodegabasic_hor.jpg);
+            background-image: url(../img/bodegaBasic/whbodegabasic_hor.avif);
+            content: "Imagen bodega basica";
         }
         &:nth-child(3) {
             background-color: v.$secundario;
             grid-column: 1 / 2;
         }
         &:nth-child(4) {
-            background-image: url(../img/bodegaRefor/whbodegarefor_hor.jpg);
+            background-image: url(../img/bodegaRefor/whbodegarefor_hor.avif);
             background-position: center;
+            content: "Imagen bodega reforzada";
         }
     }
 }
+
+
 
 .bloques-2 {
     margin-top: 5rem;
@@ -48,7 +65,8 @@
             grid-column: 2 / 3;
         }
         &:nth-child(2) {
-            background-image: url(../img/oficinas/whoficina2_hor.jpeg);
+            background-image: url(../img/oficinas/whoficina2_hor.avif);
+            content: "Imagen oficina";
         }
     }
 }
@@ -63,7 +81,8 @@
             grid-column: 1 / 2;
         }
         &:nth-child(2) {
-            background-image: url(../img/habitacional/whhabitacional_ver.jpg);
+            background-image: url(../img/habitacional/whhabitacional_ver.avif);
+            content: "Imagen modulo habitacional";
         }
     }
 }
@@ -72,14 +91,40 @@
 .bloques-4 {
     margin-top: 5rem;
 
-    .bloque-camarin {
+    .bloque-otros {
     
         &:nth-child(1) {
             background-color: darken($color: v.$primario, $amount: 10);
             grid-column: 2 / 3;
         }
         &:nth-child(2) {
-            background-image: url(../img/camarines/whcamarin_ver.jpg);
+            background-image: url(../img/camarines/whcamarin_ver.avif );
+            content: "Imagen con diferentes modelos";
         }
+    }
+}
+
+
+.bloque {
+    &__flex {
+        display: flex;
+    }
+    &__lista {
+        text-align: left;
+        margin: 2rem 2rem;
+    }
+    &__texto {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+
+        color: v.$blanco;
+        @include m.tablet { 
+            font-size: 1.6rem;
+            padding: 0;
+        }
+    }
+    li {
+        margin: .4rem;
+        list-style-type: none;
     }
 }

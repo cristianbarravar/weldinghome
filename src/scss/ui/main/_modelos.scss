@@ -8,13 +8,9 @@
 
 .modelo {
     &__presentacion {
-        background-color: darken($color: v.$primario, $amount: 5);
+        background-color: lighten($color: v.$primario, $amount: 5);
         text-align: center;
         padding: 2rem;
-        @include m.tablet { 
-            background-color: lighten($color: v.$primario, $amount: 5);
-        }
-            
     }
 
     &__heading {
@@ -22,15 +18,6 @@
         font-size: 1.8rem;
         @include m.tablet { 
             font-size: 2.8rem;
-        }
-    }
-
-    &__texto {
-        color: v.$blanco;
-        font-size: 1.4rem;
-        font-weight: 700;
-        @include m.tablet { 
-            font-size: 1.6rem;
         }
     }
 }

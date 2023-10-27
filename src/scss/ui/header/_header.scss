@@ -2,18 +2,18 @@
 @use 'base/mixins' as m;
 
 
+.webp .header {
+    background-image: linear-gradient( to right, transparentize(v.$primario, .1) 0%, transparentize(v.$primario, .1) 100% ), url(../img/whheader.webp);
+}
+.avif .header {
+    background-image: linear-gradient( to right, transparentize(v.$primario, .1) 0%, transparentize(v.$primario, .1) 100% ), url(../img/whheader.avif);
+}
+
 .header {
-
-
-    background-image: linear-gradient( to right, transparentize(v.$primario, .1) 0%, transparentize(v.$primario, .1) 100% ), url(../img/whheader.jpeg);
         background-size: cover;
         background-position: center;
         padding: 3rem 0;
         position: relative;
-
-        .webp {
-            background-image: url(../build/img/whheader.webp);
-        }
         @include m.tablet { 
             padding: 3rem 0 5rem 0;
         }
@@ -74,20 +74,24 @@
                 position: absolute;
                 right: 0;
                 bottom: -10rem;
-                max-width: 35rem;
+                max-width: 30rem;
     
                 border-top-left-radius: 2rem;
                 border-bottom-left-radius: 5rem;
                 
             }
             @include m.desktopXL { 
-                max-width: 50rem;
+                max-width: 45rem;
             }
             @include m.desktopXXL { 
-                max-width: 65rem;
+                max-width: 60rem;
             }
         }
 }
+
+
+
+
 
 .navegacion {
     display: none;
