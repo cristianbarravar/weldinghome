@@ -24,7 +24,7 @@ function css( done ) {
 
 function imagenes() {
     return src('src/img/**/*')
-        .pipe( imagemin({ optimizationLevel: 3 }) )
+        .pipe( imagemin({ optimizationLevel: 4 }) )
         .pipe( dest('build/img') )
 }
 

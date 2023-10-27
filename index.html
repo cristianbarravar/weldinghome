@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeldingHome - Inicio</title>
+    <title>WeldingHome</title>
+    
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- preload  -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
 
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+
+    <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="preload" href="../img/whheader.jpeg" as="image">
+
 </head>
 <body>
     
@@ -32,19 +38,19 @@
         <div class="contenedor">
             <div class="header__contenido">
                 <h1 class="header__heading">WeldingHome, hacemos realidad tus espacios con mucho potencial.</h1>
-                <p class="header__texto">Transformando Espacios con Creatividad y Funcionalidad: Nuestro Enfoque en la Venta de Módulos Contenedores a Medida.</p>
+                <p class="header__texto">Transformando espacios con creatividad y funcionalidad: Nuestro enfoque en la venta de Contenedores Modulares a Medida.</p>
 
                 <picture>
                     <source
-                        srcset="build/img/whheader2.avif" 
+                        srcset="build/img/fotos/wh2_hor.avif" 
                         type="image/avif">
                     <source
-                        srcset="build/img/whheader2.webp" 
+                        srcset="build/img/fotos/wh2_hor.webp" 
                         type="image/webp">
                     <source
-                        srcset="build/img/whheader2.jpg" 
+                        srcset="build/img/fotos/wh2_hor.jpeg" 
                         type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="build/img/whheader2.jpg" lazyalt="imagen" class="header__imagen">
+                    <img loading="lazy" decoding="async" src="build/img/fotos/wh2_hor.jpeg" lazyalt="imagen" class="header__imagen">
                 </picture>
             </div>
             
@@ -163,20 +169,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="bloque bloque-main bloque-bodega">
-                    <!-- <picture>
-                        <source
-                            srcset="build/img/bodegaBasic/whbodegabasic_hor.avif" 
-                            type="image/avif">
-                        <source
-                            srcset="build/img/bodegaBasic/whbodegabasic_hor.webp" 
-                            type="image/webp">
-                        <source
-                            srcset="build/img/bodegaBasic/whbodegabasic_hor.jpg" 
-                            type="image/jpeg">
-                        <img loading="lazy" decoding="async" src="build/img/bodegaBasic/whbodegabasic_hor.jpg lazyalt="imagen" class="header__imagen">
-                    </picture> -->
-                </div>
+
+                
+                
+                <div class="bloque bloque-main bloque-bodega"></div>
     
     
                 <div class="bloque bloque-main bloque-bodega">
@@ -195,6 +191,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="bloque bloque-main bloque-bodega"></div>
             </div>
         </div>
@@ -473,7 +471,7 @@
 
             <div class="footer__box">
                 <h3 class="footer__heading">Ubicación</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10213.79141730629!2d-72.77872010589898!3d-39.45246294978181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96144ee8d9e19bfb%3A0x30551cd403830606!2sLanco%2C%20Los%20R%C3%ADos!5e0!3m2!1ses-419!2scl!4v1692672102782!5m2!1ses-419!2scl" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="footer__map"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3081.3127126957793!2d-72.7663816!3d-39.4396635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDI2JzIyLjgiUyA3MsKwNDUnNTkuMCJX!5e0!3m2!1ses-419!2scl!4v1698411487710!5m2!1ses-419!2scl" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <div class="footer__box">
@@ -495,7 +493,7 @@
         <a href="https://instagram.com/weldinghome?igshid=MzRlODBiNWFlZA==" target="_blank" class="contact-buttons__button">
             <img src="/build/img/instagram.png" alt="Instagram">
         </a>
-        <a href="https://goo.gl/maps/y8dYVa71HSsY9tMQ9" target="_blank" class="contact-buttons__button">
+        <a href="https://maps.app.goo.gl/LdZcYBjP1323BRGX8" target="_blank" class="contact-buttons__button">
             <img src="/build/img/map.png" alt="Map">
         </a>
     </div>
@@ -504,7 +502,8 @@
     <a id="volverBtn" class="volver-btn"><img src="build/img/top.png" alt="logo arriba"></a>
 
 
-    <script src="js/jsimg.js"></script>
+
+
     <script src="js/gistimg.js"></script>
     <script src="js/scrollinicio.js"></script>
 </body>

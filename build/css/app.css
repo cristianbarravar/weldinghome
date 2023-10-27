@@ -407,6 +407,9 @@ p {
   padding: 3rem 0;
   position: relative;
 }
+.header .webp {
+  background-image: url(../build/img/whheader.webp);
+}
 @media (min-width: 768px) {
   .header {
     padding: 3rem 0 5rem 0;

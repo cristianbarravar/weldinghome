@@ -4,13 +4,16 @@
 
 .header {
 
-    background-image: linear-gradient( to right, transparentize(v.$primario, .1) 0%, transparentize(v.$primario, .1) 100% ), url(../img/whheader.jpeg);
 
+    background-image: linear-gradient( to right, transparentize(v.$primario, .1) 0%, transparentize(v.$primario, .1) 100% ), url(../img/whheader.jpeg);
         background-size: cover;
         background-position: center;
         padding: 3rem 0;
         position: relative;
 
+        .webp {
+            background-image: url(../build/img/whheader.webp);
+        }
         @include m.tablet { 
             padding: 3rem 0 5rem 0;
         }
