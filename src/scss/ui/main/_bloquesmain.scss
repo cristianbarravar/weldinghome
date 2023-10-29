@@ -38,7 +38,7 @@
             grid-column: 2 / 3;
         }
         &:nth-child(2) {
-            background-image: url(../img/bodegaBasic/whbodegabasic_hor.avif);
+            background-image: url(../img/bodegaBasic/whbodegabasic_hor.webp);
             content: "Imagen bodega basica";
         }
         &:nth-child(3) {
@@ -46,7 +46,7 @@
             grid-column: 1 / 2;
         }
         &:nth-child(4) {
-            background-image: url(../img/bodegaRefor/whbodegarefor_hor.avif);
+            background-image: url(../img/bodegaRefor/whbodegarefor_hor.webp);
             background-position: center;
             content: "Imagen bodega reforzada";
         }
@@ -65,7 +65,7 @@
             grid-column: 2 / 3;
         }
         &:nth-child(2) {
-            background-image: url(../img/oficinas/whoficina2_hor.avif);
+            background-image: url(../img/oficinas/whoficina2_hor.webp);
             content: "Imagen oficina";
         }
     }
@@ -81,7 +81,7 @@
             grid-column: 1 / 2;
         }
         &:nth-child(2) {
-            background-image: url(../img/habitacional/whhabitacional_ver.avif);
+            background-image: url(../img/habitacional/whhabitacional_ver.webp);
             content: "Imagen modulo habitacional";
         }
     }
@@ -98,7 +98,7 @@
             grid-column: 2 / 3;
         }
         &:nth-child(2) {
-            background-image: url(../img/camarines/whcamarin_ver.avif );
+            background-image: url(../img/camarines/whcamarin_ver.webp );
             content: "Imagen con diferentes modelos";
         }
     }
@@ -126,5 +126,6 @@
     li {
         margin: .4rem;
         list-style-type: none;
+        font-family: v.$fuenteText;
     }
 }

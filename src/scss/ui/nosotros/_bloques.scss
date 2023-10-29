@@ -34,7 +34,7 @@
         height: 35rem;
     }
     @include m.desktopXXL { 
-        height: 40rem;
+        height: 45rem;
     }
     
     &:nth-child(1) {
@@ -42,13 +42,10 @@
     }
 
     &:nth-child(2) {
-        @include m.bgImage('../img/nosotros2.jpeg');
+        @include m.bgImage('../img/fotos/wh2_hor.webp');
         background-size: cover;
         background-position: center;
         position: relative;
-        @include m.tablet { 
-            background-position: calc(30%);
-        }
     }
 
     &:nth-child(3) {
@@ -62,7 +59,7 @@
 
 
     &:nth-child(4) {
-        @include m.bgImage('../img/oficinas/whoficina_hor.jpeg')
+        @include m.bgImage('../img/oficinas/whoficina_hor.webp')
     }
 
     &__contenido {

@@ -730,25 +730,20 @@ p {
 }
 @media (min-width: 1900px) {
   .bloque {
-    height: 40rem;
+    height: 45rem;
   }
 }
 .bloque:nth-child(1) {
   background-color: rgba(13, 24, 37, 0.8);
 }
 .bloque:nth-child(2) {
-  background-image: url("../img/nosotros2.jpeg");
+  background-image: url("../img/fotos/wh2_hor.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-}
-@media (min-width: 768px) {
-  .bloque:nth-child(2) {
-    background-position: 30%;
-  }
 }
 .bloque:nth-child(3) {
   background-color: rgba(34, 84, 109, 0.8431372549);
@@ -761,7 +756,7 @@ p {
   }
 }
 .bloque:nth-child(4) {
-  background-image: url("../img/oficinas/whoficina_hor.jpeg");
+  background-image: url("../img/oficinas/whoficina_hor.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -931,7 +926,7 @@ p {
   grid-column: 2/3;
 }
 .bloques-1 .bloque-bodega:nth-child(2) {
-  background-image: url(../img/bodegaBasic/whbodegabasic_hor.avif);
+  background-image: url(../img/bodegaBasic/whbodegabasic_hor.webp);
   content: "Imagen bodega basica";
 }
 .bloques-1 .bloque-bodega:nth-child(3) {
@@ -939,7 +934,7 @@ p {
   grid-column: 1/2;
 }
 .bloques-1 .bloque-bodega:nth-child(4) {
-  background-image: url(../img/bodegaRefor/whbodegarefor_hor.avif);
+  background-image: url(../img/bodegaRefor/whbodegarefor_hor.webp);
   background-position: center;
   content: "Imagen bodega reforzada";
 }
@@ -952,7 +947,7 @@ p {
   grid-column: 2/3;
 }
 .bloques-2 .bloque-oficina:nth-child(2) {
-  background-image: url(../img/oficinas/whoficina2_hor.avif);
+  background-image: url(../img/oficinas/whoficina2_hor.webp);
   content: "Imagen oficina";
 }
 
@@ -964,7 +959,7 @@ p {
   grid-column: 1/2;
 }
 .bloques-3 .bloque-habitacional:nth-child(2) {
-  background-image: url(../img/habitacional/whhabitacional_ver.avif);
+  background-image: url(../img/habitacional/whhabitacional_ver.webp);
   content: "Imagen modulo habitacional";
 }
 
@@ -976,7 +971,7 @@ p {
   grid-column: 2/3;
 }
 .bloques-4 .bloque-otros:nth-child(2) {
-  background-image: url(../img/camarines/whcamarin_ver.avif);
+  background-image: url(../img/camarines/whcamarin_ver.webp);
   content: "Imagen con diferentes modelos";
 }
 
@@ -1001,6 +996,7 @@ p {
 .bloque li {
   margin: 0.4rem;
   list-style-type: none;
+  font-family: "Recursive", sans-serif;
 }
 
 .galeria__grid {
@@ -1035,6 +1031,7 @@ p {
   height: 100%;
   width: 100%;
 }
+
 .galeria__img:nth-child(3) {
   grid-column: 2/3;
   grid-row: 1/3;
@@ -1042,77 +1039,66 @@ p {
 @media (min-width: 768px) {
   .galeria__img:nth-child(3) {
     grid-column: 3/4;
-    grid-row: 1/3;
   }
 }
-.galeria__img:nth-child(4) {
+.galeria__img:nth-child(6) {
   grid-column: 1/2;
   grid-row: 3/5;
 }
 @media (min-width: 768px) {
-  .galeria__img:nth-child(4) {
-    grid-column: 1/2;
+  .galeria__img:nth-child(6) {
     grid-row: 2/4;
   }
 }
-.galeria__img:nth-child(5) {
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-@media (min-width: 768px) {
-  .galeria__img:nth-child(5) {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-}
-.galeria__img:nth-child(6) {
-  grid-column: 2/3;
-  grid-row: 6/8;
-}
-@media (min-width: 768px) {
-  .galeria__img:nth-child(6) {
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-}
-.galeria__img:nth-child(7) {
-  grid-column: 2/3;
-  grid-row: 4/5;
-}
-@media (min-width: 768px) {
-  .galeria__img:nth-child(7) {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-}
-.galeria__img:nth-child(8) {
+.galeria__img:nth-child(9) {
   grid-column: 1/3;
-  grid-row: 5/6;
+  grid-row: 5/7;
 }
 @media (min-width: 768px) {
-  .galeria__img:nth-child(8) {
+  .galeria__img:nth-child(9) {
     grid-column: 2/4;
     grid-row: 4/6;
   }
 }
-.galeria__img:nth-child(9) {
-  grid-column: 1/2;
-  grid-row: 6/7;
-}
-@media (min-width: 768px) {
-  .galeria__img:nth-child(9) {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-}
 .galeria__img:nth-child(10) {
-  grid-column: 1/2;
-  grid-row: 7/8;
+  grid-column: 1/3;
+  grid-row: 8/10;
 }
 @media (min-width: 768px) {
   .galeria__img:nth-child(10) {
-    grid-column: 1/2;
-    grid-row: 5/6;
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+.galeria__img:nth-child(11) {
+  grid-column: 1/2;
+  grid-row: 10/12;
+}
+@media (min-width: 768px) {
+  .galeria__img:nth-child(11) {
+    grid-column: 3/4;
+    grid-row: 7/8;
+    height: 292.5px;
+  }
+}
+.galeria__img:nth-child(12) {
+  grid-column: 2/3;
+  grid-row: 10/12;
+}
+@media (min-width: 768px) {
+  .galeria__img:nth-child(12) {
+    grid-column: 3/4;
+    grid-row: 6/7;
+  }
+}
+.galeria__img:nth-child(13) {
+  display: none;
+}
+@media (min-width: 768px) {
+  .galeria__img:nth-child(13) {
+    display: unset;
+    grid-column: 1/3;
+    grid-row: 6/8;
   }
 }
 
@@ -1253,6 +1239,7 @@ p {
 .footer__enlace {
   color: #FFF;
   font-size: 1.6rem;
+  font-family: "Recursive", sans-serif;
   margin-bottom: 1rem;
   max-width: 100%;
   padding: 1rem 0;
