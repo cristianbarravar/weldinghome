@@ -603,6 +603,7 @@ p {
   height: 35rem;
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
 @media (min-width: 1024px) {
   .enfoque__img {
@@ -718,7 +719,7 @@ p {
 }
 .bloque:nth-child(3) {
   background-color: rgba(34, 84, 109, 0.8431372549);
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 @media (min-width: 768px) {
   .bloque:nth-child(3) {
@@ -743,7 +744,7 @@ p {
   }
 }
 .bloque__heading {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
 }
 @media (min-width: 768px) {
   .bloque__heading {
@@ -759,11 +760,18 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .bloque__contact {
     margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
+.bloque__contact-space {
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .bloque__contact-space {
     margin-bottom: 0;
   }
 }
@@ -847,7 +855,7 @@ p {
 }
 
 .modelo__presentacion {
-  background-color: rgba(34, 61, 93, 0.8);
+  background-color: #1a1a1a;
   text-align: center;
   padding: 2rem;
 }
@@ -954,7 +962,7 @@ p {
   margin: 2rem 2rem;
 }
 .bloque__texto {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 0 1rem;
   color: #FFF;
 }
@@ -1062,7 +1070,8 @@ p {
   }
 }
 .galeria__img:nth-child(13) {
-  display: none;
+  grid-row: 12/14;
+  grid-column: 1/3;
 }
 @media (min-width: 768px) {
   .galeria__img:nth-child(13) {
@@ -1121,11 +1130,11 @@ p {
 .contact-buttons__button:hover {
   background-color: rgba(27, 49, 74, 0.8);
 }
-.contact-buttons__button:last-child {
+.contact-buttons__button:nth-child(2) {
   display: none;
 }
 @media (min-width: 768px) {
-  .contact-buttons__button:last-child {
+  .contact-buttons__button:nth-child(2) {
     display: flex;
   }
 }

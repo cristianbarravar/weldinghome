@@ -47,7 +47,7 @@
             background-color: v.$primario;
         }
 
-        &:last-child {
+        &:nth-child(2) {
             display: none;
             @include m.tablet { 
                 display: flex;

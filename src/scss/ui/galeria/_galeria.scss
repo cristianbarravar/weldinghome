@@ -65,7 +65,8 @@
         }
     }
     &__img:nth-child(13) {
-        display: none;
+        grid-row: 12 / 14;
+        grid-column: 1 / 3;
         @include m.tablet { 
             display: unset;
             grid-column: 1 / 3;

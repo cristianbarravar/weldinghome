@@ -17,6 +17,7 @@
         height: 35rem;
         overflow: hidden;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
         @include m.desktop { 
             margin-left: 5rem;
         }

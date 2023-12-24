@@ -50,7 +50,7 @@
 
     &:nth-child(3) {
         background-color: v.$secundario;
-        margin-top: 2rem;
+        margin-top: 1rem;
         @include m.tablet { 
             grid-column: 2 / 3;
             margin-top: 0;
@@ -72,7 +72,7 @@
         }
     }
     &__heading {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         @include m.tablet { 
             font-size: 3rem;
         }
@@ -87,9 +87,15 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-bottom: 2rem;
+
         @include m.tablet { 
             margin-top: 2rem;
+            margin-bottom: 0;
+        }
+    }
+    &__contact-space {
+        margin-bottom: 1rem;
+        @include m.tablet { 
             margin-bottom: 0;
         }
     }
@@ -97,7 +103,6 @@
         font-size: 1.2rem;
         text-transform: uppercase;
         color: v.$blanco;
-        // padding-bottom: 2rem ;
         @include m.desktop { 
             font-size: 1.4rem;
         }
@@ -106,7 +111,6 @@
         }
     }
     &__logos {
-        // padding-left: 1rem;
         display: flex;
         a {
             margin-left: 2rem;
